@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #0A0A0A;
+    color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+/* Estilizando o header e o nav */
+header {
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    padding: 10px 20px; /* Espaçamento interno */
+    color: #fff; /* Cor do texto */
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center; /* Alinha itens verticalmente */
+    justify-content: space-between; /* Espaça os itens */
+}
+
+/* Estilizando a imagem */
+nav img {
+    max-height: 50px; /* Ajusta a altura da imagem */
+    object-fit: contain; /* Mantém a proporção da imagem */
+}
+
+/* Estilizando a lista do menu */
+ul {
+    list-style: none; /* Remove os marcadores da lista */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    display: flex; /* Alinha os itens horizontalmente */
+}
+
+ul li {
+    margin: 0 15px; /* Espaçamento entre os itens do menu */
+}
+
+ul li a {
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 16px; /* Tamanho da fonte dos links */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+ul li a:hover {
+    color: #f0f0f0; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilizando o botão */
+button {
+    background-color: #4F4F4F; /* Cor de fundo do botão */
+    border: none; /* Remove a borda padrão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilizando o item ativo */
+ul li.active a {
+    color: #f0f0f0; /* Cor do texto para o item ativo */
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+}
+
+/* Adicionando a bolinha embaixo do item ativo */
+ul li.active a::after {
+    content: ''; /* Necessário para criar o pseudo-elemento */
+    position: absolute;
+    left: 50%; /* Centraliza o ponto */
+    bottom: -10px; /* Distância entre o texto e o ponto */
+    transform: translateX(-50%); /* Centraliza o ponto */
+    width: 4px; /* Largura do ponto */
+    height: 4px; /* Altura do ponto */
+    border-radius: 50%; /* Faz o ponto ser redondo */
+    background-color: #f0f0f0; /* Cor do ponto */
+}
+
