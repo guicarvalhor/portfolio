@@ -84,3 +84,120 @@ ul li.active a::after {
     background-color: #f0f0f0; /* Cor do ponto */
 }
 
+.profile{
+    display: flex;
+    margin: 50px 0px;
+}
+.labels{
+    padding: 20px;
+}
+#hello{
+    font-size: 50px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+#cargo{
+    font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+/* Estilizando o contêiner dos botões */
+.social-buttons {
+    display: flex; /* Alinha os botões horizontalmente */
+    gap: 15px; /* Espaçamento entre os botões */
+    justify-content: start; /* Centraliza os botões no contêiner */
+    padding: 20px 0px; /* Espaçamento interno */
+}
+
+/* Estilizando cada botão */
+.social-button {
+    display: flex; /* Alinha o ícone centralizado dentro do botão */
+    align-items: center;
+    justify-content: center;
+    width: 45px; /* Largura do botão */
+    height: 45px; /* Altura do botão */
+    background-color: #fff; /* Cor de fundo branca */
+    border-radius: 50%; /* Botões arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #333; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para as cores */
+}
+
+.social-button:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+    color: #D05353; /* Cor dos ícones ao passar o mouse */
+}
+/* Estilizando o contêiner da fita */
+.tech-ribbon {
+    display: flex; /* Alinha os ícones horizontalmente */
+    flex-wrap: wrap; /* Permite que os ícones quebrem a linha se não houver espaço */
+    justify-content: center; /* Centraliza os ícones no contêiner */
+    align-items: center; /* Alinha os ícones verticalmente */
+    background-color: #333; /* Cor de fundo da fita */
+    padding: 10px; /* Espaçamento interno da fita */
+    border-radius: 10px; /* Borda arredondada da fita */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    gap: 30px;
+}
+
+/* Estilizando cada ícone */
+.tech-ribbon i {
+    color: #fff; /* Cor dos ícones */
+    font-size: 36px; /* Tamanho dos ícones */
+    margin: 10px; /* Espaçamento entre os ícones */
+    transition: color 0.3s, transform 0.3s; /* Transições suaves para cor e transformação */
+}
+
+/* Efeito de hover para os ícones */
+.tech-ribbon i:hover {
+    color: #007bff; /* Cor dos ícones ao passar o mouse */
+    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+}
+
+/* Estilizando o contêiner com a imagem de fundo */
+.background-container {
+    width: 649.95px; /* Largura do contêiner */
+    height: 328.63px; /* Altura do contêiner */
+    padding: 18.31px; /* Espaçamento interno */
+    background-image: url('/assets/figura1.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Cobre todo o contêiner */
+    background-position: center; /* Centraliza a imagem */
+    border-radius: 18.31px; /* Bordas arredondadas */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, black 100%), url('/assets/figura1.jpg'); /* Gradiente sobre a imagem */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 14.65px; /* Espaçamento entre o título e a descrição */
+}
+
+/* Estilizando o conteúdo de texto */
+.text-content {
+    text-align: center; /* Alinha o texto ao centro */
+    color: white; /* Cor do texto */
+    width: 100%; /* Largura total do contêiner */
+}
+
+/* Estilizando o título */
+.title {
+    font-size: 21.97px; /* Tamanho da fonte do título */
+    font-family: 'Plus Jakarta Sans', sans-serif; /* Família da fonte do título */
+    font-weight: 500; /* Peso da fonte do título */
+    line-height: 26.36px; /* Altura da linha do título */
+    letter-spacing: 0.02px; /* Espaçamento entre letras do título */
+    word-wrap: break-word; /* Quebra de linha no título */
+}
+
+/* Estilizando a descrição */
+.description {
+    font-size: 15.56px; /* Tamanho da fonte da descrição */
+    font-family: 'Plus Jakarta Sans', sans-serif; /* Família da fonte da descrição */
+    font-weight: 400; /* Peso da fonte da descrição */
+    line-height: 20.14px; /* Altura da linha da descrição */
+    letter-spacing: 0.07px; /* Espaçamento entre letras da descrição */
+    word-wrap: break-word; /* Quebra de linha na descrição */
+}
