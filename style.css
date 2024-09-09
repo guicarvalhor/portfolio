@@ -493,5 +493,65 @@ h3{
   .card-form{
     width: 80%;
   }
+}
 
+/* Página de projetos */
+
+/* Estilo do card */
+.projeto-card {
+  /* max-width: 450px;  */
+  margin: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.projeto-card:hover {
+  transform: scale(1.05);
+}
+
+.projeto-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.projeto-info {
+  background-color: #0C4767;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.projeto-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.projeto-info p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .projeto-card {
+      max-width: 100%;
+      margin: 10px;
+  }
+
+  .projeto-info h2 {
+      font-size: 20px;
+  }
+
+  .projeto-info p {
+      font-size: 14px;
+  }
 }
