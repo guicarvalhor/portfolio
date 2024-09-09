@@ -555,3 +555,108 @@ h3{
       font-size: 14px;
   }
 }
+
+/* Contato */
+/* Estilos aplicados apenas aos links dentro do card de contato */
+.contato-card a {
+  text-decoration: none;
+  color: white; /* Evita que o link mude de cor */
+}
+
+.contato-card a:visited {
+  color: white; /* Previne que o link altere sua cor após o clique */
+}
+
+/* Estilo do card de contato */
+.contato-card {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0C4767;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.contato-texto h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contato-texto p {
+  margin-bottom: 60px;
+  opacity: 0.8;
+}
+
+.contato-links {
+  display: flex;
+  gap: 20px;
+}
+
+.contato-item {
+  width: 120px;
+  height: 120px;
+  background-color: #1f88c0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+}
+
+.contato-item i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.contato-item h3 {
+  font-size: 18px;
+  color: white;
+}
+
+.contato-item:hover {
+  transform: scale(1.1);
+  background-color: #555;
+}
+
+.instagram:hover {
+  background-color: #e1306c;
+}
+
+.whatsapp:hover {
+  background-color: #25d366;
+}
+
+.email:hover {
+  background-color: #0072c6;
+}
+
+.contato-imagem img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contato-card {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .contato-links {
+      flex-direction: column;
+  }
+
+  .contato-item {
+      width: 100%;
+  }
+
+  .contato-imagem img {
+      width: 150px;
+      margin-top: 20px;
+  }
+}
