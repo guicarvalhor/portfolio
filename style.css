@@ -434,4 +434,64 @@ button:hover {
   }
 }
 
-/* Criando animações */
+/* Página de Sobre Mim */
+.formacao{
+  margin-top: 30px;
+}
+
+.itens{
+display: flex;
+justify-content: space-between;
+gap: 12px;
+margin-top: 30px;
+flex-wrap: wrap;
+}
+
+.card-form{
+  border: #0C4767 solid 1px;
+  border-radius: 20px;
+  padding: 20px;
+  width: 26%;
+  background-color: #0C4767;
+}
+
+.icon-card{
+ height: 40px;
+}
+
+h3{
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.work{
+  margin-top: 30px;
+}
+
+.form-content p{
+  color: #fff;
+}
+.resume{
+  border: #0C4767 solid 1px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.resume{
+  background-color: #0C4767;
+  color: #fff;
+  text-align: justify;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .itens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-form{
+    width: 80%;
+  }
+
+}
