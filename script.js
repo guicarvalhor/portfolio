@@ -1,6 +1,6 @@
 function goToProject() {
     // Redireciona o usuário para a página do projeto
-    window.location.href = "emconstrucao.html";
+    window.location.href = "limesurvey.html";
 }
 function toggleMenu() {
     const navMenu = document.querySelector('.nav-menu');
