@@ -6,7 +6,7 @@ function toggleMenu() {
     const navMenu = document.querySelector('.nav-menu');
     navMenu.classList.toggle('active');
   } const cargoElement = document.getElementById('cargo');
-  const cargos = ['Desenvolvedor', 'Design UX/UI', 'Product Designer', 'Apaixonado por tecnologia'];
+  const cargos = ['Desenvolvedor Front-end', 'Design UX/UI', 'Product Designer', 'Apaixonado por tecnologia'];
   let currentCargoIndex = 0;
   let currentCharIndex = 0;
   let typing = true;
