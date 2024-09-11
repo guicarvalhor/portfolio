@@ -456,6 +456,16 @@ button:hover {
   }
 }
 
+/* footer */
+
+.footer-credits {
+  margin: 60px 0;
+  text-align: center;
+  border-radius: 20px;
+  border: #0C4767 solid 1px;
+  padding: 20px;
+}
+
 /* Página de Sobre Mim */
 .formacao {
   margin-top: 30px;
@@ -704,16 +714,16 @@ h3 {
   line-height: normal;
 }
 
-.content img{
+.content img {
   width: 100%;
 }
 
-.sub-title{
+.sub-title {
   text-align: center;
   margin: 20px 0;
 }
 
-.text{
+.text {
   text-align: center;
   margin: 20px 0px;
 }
