@@ -159,20 +159,81 @@ ul li.active a::after {
 }
 
 /* Estilizando o contêiner da fita */
-.tech-ribbon {
+/* .tech-ribbon {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 10px;
   border-radius: 20px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   gap: 30px;
   border: #0C4767 solid 1px;
+} */
+/* Contêiner principal */
+.carousel {
+  display: flex;
+  overflow: hidden; /* Esconde os ícones fora da área visível */
+  position: relative;
+  width: 100%; /* Ajuste conforme o layout */
+  height: 100px; /* Altura ajustável */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: #0C4767 solid 1px;
+  align-items: center;
+}
+
+/* Grupo de ícones */
+.group {
+  display: flex;
+  gap: 100px; /* Espaço entre os ícones */
+  animation: scroll 15s linear infinite; /* Animação de rolagem */
+  padding-right: 100px;
+}
+
+/* Ícones */
+.group i {
+  font-size: 2rem;
+  color: #0c4767;
+  flex-shrink: 0; /* Garante que os ícones não encolham */
+}
+
+/* Pausa ao passar o mouse */
+.carousel:hover .group {
+  animation-play-state: paused; /* Pausa a animação */
+}
+
+/* Animação */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Início */
+  }
+  100% {
+    transform: translateX(-100%); /* Sai completamente da tela */
+  }
+}
+.carousel::before,
+.carousel::after {
+  content: ""; /* Adiciona gradientes para as bordas */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  z-index: 1;
+  pointer-events: none; /* Permite interação com os ícones mesmo sobre o gradiente */
+}
+.carousel::before {
+  left: 0;
+  background: linear-gradient(to right, #fff, transparent);
+}
+
+.carousel::after {
+  right: 0;
+  background: linear-gradient(to left, #fff, transparent);
 }
 
 /* Estilizando cada ícone */
-.tech-ribbon i {
+.carousel i {
   color: #0C4767;
   font-size: 36px;
   margin: 10px;
@@ -180,7 +241,7 @@ ul li.active a::after {
 }
 
 /* Efeito de hover para os ícones */
-.tech-ribbon i:hover {
+.carousel i:hover {
   color: #007bff;
   transform: scale(1.2);
 }
@@ -597,12 +658,10 @@ h3 {
 .contato-card a {
   text-decoration: none;
   color: white;
-  /* Evita que o link mude de cor */
 }
 
 .contato-card a:visited {
   color: white;
-  /* Previne que o link altere sua cor após o clique */
 }
 
 /* Estilo do card de contato */
@@ -611,11 +670,11 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0C4767;
+  background-color: #e7edf0;
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  color: white;
+  color: #0C4767;
 }
 
 .contato-texto h2 {
