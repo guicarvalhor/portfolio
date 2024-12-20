@@ -1,6 +1,10 @@
-function goToProject() {
+function goToProject1() {
     // Redireciona o usuário para a página do projeto
     window.location.href = "limesurvey.html";
+}
+function goToProject3() {
+    // Redireciona o usuário para a página do projeto
+    window.location.href = "intranet.html";
 }
 function toggleMenu() {
     const navMenu = document.querySelector('.nav-menu');
